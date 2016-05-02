@@ -114,8 +114,8 @@ public class Cache {
             BufferedReader in = new BufferedReader(fr);
         
             while((line = in.readLine()) != null) {
-                System.out.println(line);
-                System.out.println("La línea sin manipular es: " + line);
+                //System.out.println(line);
+                //System.out.println("La línea sin manipular es: " + line);
                 String linea = null; //reinicio linea
                 linea = in.readLine();
                 StringTokenizer tokens = new StringTokenizer(linea, "    ");
@@ -273,9 +273,9 @@ public class Cache {
                             cacheasoc[bloqaguard][setdecima] = tagdato; //se trae el dato y se guarda en una posición aleatoria
                         }
                     }
-                } 
-                System.out.println("El hitrate es: " + hitrate + ", el missrate es: " + missrate + "\n\n\n");   
+                }        
             }
+            System.out.println("El hitrate es: " + 100*hitrate/(hitrate+missrate) + ", el missrate es: " + 100*missrate/(hitrate+missrate) + "\n\n\n");
         }
     }                   
 }
