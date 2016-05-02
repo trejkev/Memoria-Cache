@@ -86,7 +86,7 @@ public class Cache {
         long tag;
         double a = Math.log(tambloq/4) / Math.log(2); //byteoffset=logaritmo en base 2 de la cantidad de posiciones del bloque
         byteoffset = (long)a;
-        System.out.println("El byte offset es: " + byteoffset);
+        System.out.println("La cantidad de bits para el byte offset es: " + byteoffset);
         double b = Math.log(asociatividad) / Math.log(2);
         set = (long)b;
         System.out.println("La cantidad de bits para el set es: " + set);
